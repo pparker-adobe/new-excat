@@ -1,0 +1,139 @@
+/*
+ * VA.gov Callout Columns Block
+ * Based on VA.gov health page callout sections
+ */
+
+.columns-va-callout {
+  background-color: var(--color-primary-alt-lightest);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-5);
+  margin: var(--spacing-5) 0;
+}
+
+@media (width >= 768px) {
+  .columns-va-callout {
+    padding: var(--spacing-6);
+  }
+}
+
+.columns-va-callout > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+@media (width >= 900px) {
+  .columns-va-callout > div {
+    align-items: center;
+    flex-direction: row;
+    gap: var(--spacing-6);
+  }
+
+  .columns-va-callout > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
+
+/* Image column */
+.columns-va-callout > div > div {
+  order: 1;
+}
+
+.columns-va-callout > div > .columns-va-callout-img-col {
+  order: 0;
+}
+
+.columns-va-callout > div > .columns-va-callout-img-col img {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+@media (width >= 900px) {
+  .columns-va-callout > div > .columns-va-callout-img-col {
+    flex: 0 0 280px;
+  }
+}
+
+/* Content column typography */
+.columns-va-callout h2,
+.columns-va-callout h3 {
+  color: var(--color-primary-dark);
+  font-family: var(--heading-font-family);
+  font-weight: var(--font-weight-bold);
+  margin-top: 0;
+  margin-bottom: var(--spacing-3);
+}
+
+.columns-va-callout h2 {
+  font-size: var(--heading-font-size-m);
+}
+
+.columns-va-callout h3 {
+  font-size: var(--heading-font-size-s);
+}
+
+.columns-va-callout p {
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-3);
+}
+
+.columns-va-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.columns-va-callout a {
+  color: var(--link-color);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: underline;
+}
+
+.columns-va-callout a:hover {
+  color: var(--link-hover-color);
+}
+
+.columns-va-callout a:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Lists within callout */
+.columns-va-callout ul,
+.columns-va-callout ol {
+  margin: var(--spacing-3) 0;
+  padding-left: var(--spacing-5);
+}
+
+.columns-va-callout li {
+  color: var(--text-color);
+  font-size: var(--body-font-size-m);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-2);
+}
+
+/* Button styling */
+.columns-va-callout .button-container a,
+.columns-va-callout a.button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  font-weight: var(--button-font-weight);
+  text-decoration: none;
+  transition: background-color var(--transition-fast);
+}
+
+.columns-va-callout .button-container a:hover,
+.columns-va-callout a.button:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}

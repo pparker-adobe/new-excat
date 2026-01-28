@@ -1,0 +1,147 @@
+/*
+ * VA.gov Info Tabs Block
+ * Based on VA.gov health page tabs section
+ */
+
+.tabs-va-info {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-10);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+/* Tab list container */
+.tabs-va-info .tabs-va-info-list {
+  display: flex;
+  gap: 0;
+  max-width: 100%;
+  font-size: var(--body-font-size-s);
+  overflow-x: auto;
+  background-color: var(--color-gray-5);
+  border-bottom: 1px solid var(--color-gray-10);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (width >= 768px) {
+  .tabs-va-info .tabs-va-info-list {
+    font-size: var(--body-font-size-m);
+  }
+}
+
+/* Tab buttons */
+.tabs-va-info .tabs-va-info-list button {
+  flex: 0 0 max-content;
+  margin: 0;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  padding: var(--spacing-3) var(--spacing-4);
+  background-color: transparent;
+  color: var(--color-primary);
+  font-family: var(--body-font-family);
+  font-weight: var(--font-weight-semibold);
+  font-size: inherit;
+  line-height: var(--line-height-normal);
+  text-align: left;
+  text-overflow: unset;
+  overflow: unset;
+  white-space: nowrap;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+  cursor: pointer;
+}
+
+.tabs-va-info .tabs-va-info-list button:hover {
+  background-color: var(--color-gray-10);
+}
+
+.tabs-va-info .tabs-va-info-list button:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.tabs-va-info .tabs-va-info-list button p {
+  margin: 0;
+}
+
+/* Active tab */
+.tabs-va-info .tabs-va-info-list button[aria-selected='true'] {
+  border-bottom-color: var(--color-primary);
+  background-color: var(--color-white);
+  color: var(--heading-color);
+  cursor: default;
+}
+
+/* Tab panel content */
+.tabs-va-info .tabs-va-info-panel {
+  padding: var(--spacing-5);
+  background-color: var(--color-white);
+  overflow: auto;
+}
+
+@media (width >= 768px) {
+  .tabs-va-info .tabs-va-info-panel {
+    padding: var(--spacing-6);
+  }
+}
+
+.tabs-va-info .tabs-va-info-panel[aria-hidden='true'] {
+  display: none;
+}
+
+/* Panel content styling */
+.tabs-va-info .tabs-va-info-panel h2,
+.tabs-va-info .tabs-va-info-panel h3 {
+  color: var(--heading-color);
+  margin-top: 0;
+}
+
+.tabs-va-info .tabs-va-info-panel p {
+  color: var(--text-color);
+  line-height: var(--line-height-relaxed);
+}
+
+.tabs-va-info .tabs-va-info-panel a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.tabs-va-info .tabs-va-info-panel a:hover {
+  color: var(--link-hover-color);
+}
+
+.tabs-va-info .tabs-va-info-panel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-sm);
+  margin: var(--spacing-4) 0;
+}
+
+/* Panel with image layout */
+.tabs-va-info .tabs-va-info-panel > div:has(img) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+@media (width >= 768px) {
+  .tabs-va-info .tabs-va-info-panel > div:has(img) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .tabs-va-info .tabs-va-info-panel > div:has(img) img {
+    flex: 0 0 200px;
+    margin: 0;
+  }
+}
+
+/* VA-specific Inside Veterans Health styling */
+.tabs-va-info .tabs-va-info-panel h3:has(+ div a[href*="rss"]) {
+  font-size: var(--heading-font-size-s);
+  color: var(--heading-color);
+  border-bottom: 1px solid var(--color-gray-10);
+  padding-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-3);
+}

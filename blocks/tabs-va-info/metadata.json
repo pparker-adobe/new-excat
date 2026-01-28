@@ -1,0 +1,38 @@
+{
+  "variantName": "tabs-va-info",
+  "baseBlock": "tabs",
+  "version": "1.0.0",
+  "created": "2026-01-28T17:05:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.va.gov/health/",
+    "originPage": "VA Health homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "normal",
+    "purpose": "info-tabs",
+    "imagePattern": "mixed"
+  },
+  "contentPattern": {
+    "structure": "tab name + rich content per tab",
+    "buttonCount": 0,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "government information portals",
+      "multi-topic content organization",
+      "health/services information tabs"
+    ],
+    "notSuitableFor": [
+      "simple FAQ sections",
+      "single-content displays"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/health"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-28T17:05:00.000Z"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "templates": [
+    {
+      "name": "va-health-homepage",
+      "urls": ["https://www.va.gov/health/"],
+      "description": "Veterans Health Administration homepage with carousel, tabs, and info sections",
+      "blocks": [
+        {
+          "name": "carousel-va-feature",
+          "instances": ["#healthslider"]
+        },
+        {
+          "name": "tabs-va-info",
+          "instances": ["#tabContent"]
+        },
+        {
+          "name": "columns-va-callout",
+          "instances": [".basicContainer:has(img[alt*='Stop'])", "#vamcStories"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-va-callout",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-01-28T17:05:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.va.gov/health/",
+    "originPage": "VA Health homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "accent",
+    "density": "normal",
+    "purpose": "callout",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "image + heading + paragraph + link",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "callout sections with image and text",
+      "policy announcements",
+      "featured information with icon/image"
+    ],
+    "notSuitableFor": [
+      "complex multi-column layouts",
+      "image galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/health"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-28T17:05:00.000Z"
+  }
+}

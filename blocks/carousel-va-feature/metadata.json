@@ -1,0 +1,38 @@
+{
+  "variantName": "carousel-va-feature",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-01-28T17:05:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.va.gov/health/",
+    "originPage": "VA Health homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "normal",
+    "purpose": "feature-carousel",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description + CTA per slide",
+    "buttonCount": 1,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "government homepage feature carousels",
+      "news and announcement rotators",
+      "multi-feature showcases with images"
+    ],
+    "notSuitableFor": [
+      "simple image galleries without text",
+      "single-slide hero sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/content/health"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-28T17:05:00.000Z"
+  }
+}
